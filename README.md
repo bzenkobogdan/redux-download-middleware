@@ -3,6 +3,12 @@ Redux download file middleware
 
 Example: 
 
+
+//import download symbol
+```
+import {DOWNLOAD_FILE} from '/middleware/redux-download-middleware';
+```
+
 //action types
 ```
 const ActionTypes = {
