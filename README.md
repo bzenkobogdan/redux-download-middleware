@@ -37,12 +37,14 @@ const downloadSomeFile = () => dispatch => {
 const downloadFile = (state = {}, {type}) => {
     if (type === ActionTypes.DOWNLOAD_SOME_FILE_SUCCESS) {
         return {
+            ...state,
             loaded: true
         };
     }
     
     if (type === ActionTypes.DOWNLOAD_SOME_FILE_FAILURE) {
         return {
+            ...state,
             loaded: false
         };
     }
